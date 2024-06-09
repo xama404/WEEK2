@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link {
+    font-size: 20px;
+}
+
+.nav-link a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link a:hover {
+    color:rgb(255, 1, 1);
+}
+
+.btn-contact {
+    background-color: orangered;
+    color: white;
+    margin: 20px;
+    padding: 10px;
+    width: 100px;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* ini responsive navbar */
+
+ #humberger-button {
+    display: none;
+}
+
+.humberger-nav-container {
+    display: none;
+       
+}
+
+.humberger-nav-container a{
+    color:azure;
+    border: 2px solid white;
+    background-color: rgb(217,217,217);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.humberger-nav-container .active {
+    background-color: orangered;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #humberger-button {
+        display: block;
+    }
+
+    .nav-collapse {
+        display: none;
+    }
+        
+    .humberger-nav-container {
+        font-size: 23px;
+        display: none;
+        flex-direction: column;
+    }
+}

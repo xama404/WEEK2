@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="assets/css/index.css">
+        <link rel="stylesheet" href="assets/css/contact.css">
+        <link rel="stylesheet" href="assets/css/blog.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body style="background-color: #dddddd; font-family: 'Poppins', Arial, sans-serif; font-size: 20px;">
+    
+    <!-- nav awal -->
+    <nav style="background-color:rgb(0, 88, 35);height: 80px;">
+        <div style="display: flex; align-items: center; height: 100%; margin-left: 30px;">
+            <ul style="display: flex; list-style-type: none; gap: 45px;align-items: center; width: 100%;">
+                <li>
+                    <img style="height: 50px;" src="https://dumbways.id/assets/images/brandwhite.png" alt="logo dumbways">
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="myproject.html">My Project</a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="blog-detail.html">Blog</a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="testimonial.html">Testimonial</a>
+                </li>
+    
+            </ul>
+    
+            <div style="display: flex; width: 100%; justify-content: end;">
+                <a href="contact.html" class="btn-contact nav-collapse">Contact Me</a>
+                <i class="fa-solid fa-bars" style="cursor: pointer; width: 60px;" id="humberger-button" onclick="openHumberger()"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- nav selesai -->
+    <div class="humberger-nav-container" id="humberger-nav-container">
+        <a href="index.html" class="active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+<div class="blog-detail">   
+    <div class="blog">
+        <div class="blog-form">
+            <div class="form-container">
+                <form onsubmit="submitBlog(event)">
+                    <h1>Create Post Blog</h1>
+                    <div>
+                        <label for="title">Title</label>
+                        <input type="text" id="inputTitle">
+                    </div>
+                    <div>
+                        <label for="content">Content</label>
+                        <textarea id="inputContent"></textarea>
+                    </div>
+                    <div>
+                        <label for="image">Upload Image</label>
+                        <input type="file" id="inputImage">
+                    </div>
+                    <div class="button-input">
+                        <button>Post Blog</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- <hr class="line"> -->
+        <div id="content" class="blog-list">
+
+        </div>
+    </div>  
+</div>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/nav.js"></script>
+
+</body>
+</html>
+

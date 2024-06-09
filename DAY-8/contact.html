@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+        <!-- nav awal -->
+        <nav style="background-color:rgb(0, 88, 35);height: 80px;">
+            <div style="display: flex; align-items: center; height: 100%; margin-left: 30px;">
+                <ul style="display: flex; list-style-type: none; gap: 45px;align-items: center; width: 100%;">
+                    <li>
+                        <img style="height: 50px;" src="https://dumbways.id/assets/images/brandwhite.png" alt="logo dumbways">
+                    </li>
+                    <li class="nav-link nav-collapse">
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li class="nav-link nav-collapse">
+                        <a href="myproject.html">My Project</a>
+                    </li>
+                    <li class="nav-link nav-collapse">
+                        <a href="blog-detail.html">Blog</a>
+                    </li>
+                    <li class="nav-link nav-collapse">
+                        <a href="testimonial.html">Testimonial</a>
+                    </li>
+        
+                </ul>
+        
+                <div style="display: flex; width: 100%; justify-content: end;">
+                    <a href="contact.html" class="btn-contact nav-collapse">Contact Me</a>
+                    <i class="fa-solid fa-bars" style="cursor: pointer; width: 60px;" id="humberger-button" onclick="openHumberger()"></i>
+                </div>
+            </div>
+        </nav>
+        <!-- nav selesai -->
+        <div class="humberger-nav-container" id="humberger-nav-container">
+            <a href="index.html" class="active">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="testimonial.html">Testimonial</a>
+            <a href="contact.html">Contact Me</a>
+        </div>
+    <div style="text-align: center; margin-top: 80px;">
+        
+        <h1>KIRIM PESAN</h1>
+
+
+    </div>
+    
+    <div class="blog-detail-container">
+        <div style="margin-top: 10px;" class="container">
+        
+            <form class="form-contact">
+                <label for="label-contact">Name</label>
+                <input type="text" class="input-contact" id="inputName">
+    
+                <label for="label-contact">Email</label>
+                <input type="text" class="input-contact" id="inputEmail">
+    
+                <label for="label-contact">Phone Number</label>
+                <input type="text" class="input-contact" id="inputPhone">
+    
+                <label for="label-contact">Subject</label>
+                <select class="input-contact" id="inputSubject"> 
+                    <option>Frontend Developer</option>
+                    <option>Backend Developer</option>
+                    <option>Fullstack Developer</option>
+                </select>
+    
+                <label for="label-contact">Your Message</label>
+                <textarea class="input-contact" id="inputMessage"></textarea>
+                <input type="submit" value="Submit" class="submit-contact"; onclick="submitData()">
+    
+                <script src="assets/js/contact.js">
+    
+                </script>
+             </form>
+        </div>
+    </div>
+
+
+    
+    <script src="assets/js/nav.js"></script>    
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+
+    <!-- nav awal -->
+    <nav style="background-color:rgb(0, 88, 35);height: 80px;">
+        <div style="display: flex; align-items: center; height: 100%; margin-left: 30px;">
+            <ul style="display: flex; list-style-type: none; gap: 45px;align-items: center; width: 100%;">
+                <li>
+                    <img style="height: 50px;" src="https://dumbways.id/assets/images/brandwhite.png" alt="logo dumbways">
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="myproject.html">My Project</a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="blog-detail.html">Blog</a>
+                </li>
+                <li class="nav-link nav-collapse">
+                    <a href="testimonial.html">Testimonial</a>
+                </li>
+    
+            </ul>
+    
+            <div style="display: flex; width: 100%; justify-content: end;">
+                <a href="contact.html" class="btn-contact nav-collapse">Contact Me</a>
+                <i class="fa-solid fa-bars" style="cursor: pointer; width: 60px;" id="humberger-button" onclick="openHumberger()"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- nav selesai -->
+    <div class="humberger-nav-container" id="humberger-nav-container">
+        <a href="index.html" class="active">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="testimonial.html">Testimonial</a>
+        <a href="contact.html">Contact Me</a>
+    </div>
+    <div class="blog-detail">
+   
+        <div style="
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 1100px;
+        margin: 120px auto;
+        padding: 40px 20px; 
+        background-color: #fcfdfc; 
+        border-radius: 7px;">
+        <!-- Div untuk teks -->
+        <div style="
+          width: 50%;
+          margin-right: 50px ;
+          text-align: left;
+        ">
+            <!-- Header -->
+            <h1 style="font-size: 1.5em; margin-bottom: 15px;">Hi, Welcome to my project</h1>
+            
+            <!-- Isi Pesan -->
+            <p style="text-align: justify; padding-bottom: 15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    
+            <!-- Buttons Contact & Download CV -->
+            <div style="display: flex; justify-content: flex-start; gap: 15px; margin-bottom: 20px; padding-bottom: 5px;">
+                <!-- Button Contact -->
+                <button type="button"
+                    onclick="window.location.href = 'https://api.whatsapp.com/send/?phone=6282274846424&text&type=phone_number&app_absent=0'"
+                    style="background-color: #111727;
+                    color: white;
+                    border-radius: 15px;
+                    padding: 5px 15px;
+                    border: none;
+                    cursor: pointer;
+                    text-align: center;
+                    font-family: 'Poppins', Arial, sans-serif; font-size: 15px;
+                ">Contact</button>
+    
+                <!-- Donwload CV -->
+                <a href="" download="CV.txt"
+                    style="background-color: rgb(243, 243, 243);
+                    color: #111727;
+                    border-radius: 15px;
+                    padding: 10px 10px;
+                    text-decoration: none;
+                    font-size: 15px;
+                    border: 0px solid black;"
+                    onmouseover="this.style.backgroundColor='rgb(204, 210, 212)';"
+                    onmouseout="this.style.backgroundColor='rgb(243, 243, 243)';">
+                    Download CV <i class="fas fa-download"></i></a>
+            </div>
+    
+            <!-- Social Icons -->
+            <div style="display: flex; justify-content: left; gap: 15px; margin-bottom: 15px;">
+                <a href="https://www.linkedin.com/in/harry-ramadani-946a4114b/" target="_blank"><i class="fab fa-linkedin" style="font-size: 1.2em; color: black; cursor: pointer;"></i></a>
+                <a href="https://instagram.com/harryrdn_" target="_blank"><i class="fab fa-instagram" style="font-size: 1.2em; color: black; cursor: pointer;"></i></a>
+                <a href="https://facebook.com/HARRYRDNN" target="_blank"><i class="fab fa-facebook" style="font-size: 1.2em; color: black; cursor: pointer;"></i></a>
+                <a href="https://twitter.com/harryrdn" target="_blank"><i class="fab fa-twitter" style="font-size: 1.2em; color: black; cursor: pointer;"></i></a>
+            </div>
+        </div>
+    
+        <!-- Div untuk gambar -->
+        <div style="
+          width: 25%;
+          text-align: center;
+          background-color: #f8f4f4;
+          border-radius: 7px;
+          margin-right: 0px;
+        ">
+            <img src="assets/img/user/jj.jpg" 
+                alt="my photo" 
+                style="width: 100%; border-radius: 5px; margin-bottom: 5px;">
+            <h1 style="margin: 5px 0; font-size: 1.2em;">Harry Ramadani</h1>
+            <p style="margin: 5px 0;padding-bottom: 10px; color: #494647; font-weight: 500;">Full Stack Developer</p>
+        </div>
+        
+    </div>
+</div>
+
+    </div>        <!-- Container baru untuk membungkus teks dan gambar -->
+    
+
+</div>
+
+<script src="assets/js/nav.js"></script>
+</body>
+</html>
